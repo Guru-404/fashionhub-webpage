@@ -31,22 +31,16 @@
 }
 
 .navbar-container div:nth-child(2) {
-	width: 60%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	/* padding-left: 7%; */
-}
-
-.list {
+	width: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-	width: 80%;
+	/* padding-left: 7%; */
 }
 
 .list-item {
-	list-style: none;
+	text-decoration: none;
+	color: #000000;
 	/* padding: 0 2.2rem; */
 	font-family: 'Orbitron', sans-serif;
 	font-size: 1.1rem;
@@ -57,6 +51,11 @@
 	font-size: 1.3rem;
 	font-weight: 800;
 	border-bottom: 3px solid #000;
+}
+
+.list-item:hover {
+	font-weight: 800;
+	cursor: pointer;
 }
 
 .button-group {
@@ -86,6 +85,10 @@
 	padding: 0.3rem 2rem;
 	/* position: absolute;
 	right: 5%; */
+}
+
+.nav-button:hover {
+	color: black;
 }
 
 /* Hero Section */
@@ -171,6 +174,11 @@ img[alt='person-hero-image'] {
 	margin-right: 1rem;
 }
 
+.button-email:hover {
+	color: #ffffff;
+	background-color: #000000;
+}
+
 .button-join {
 	font-family: 'Orbitron', sans-serif;
 	color: #ffffff;
@@ -182,6 +190,11 @@ img[alt='person-hero-image'] {
 	border-radius: 7px;
 }
 
+.button-join:hover {
+	color: #515151;
+	background-color: #fff;
+}
+
 .contact-heading {
 	font-family: 'Poppins', sans-serif;
 	text-align: center;
@@ -191,7 +204,12 @@ img[alt='person-hero-image'] {
 	margin-top: 5.5rem;
 }
 
-.icons span img {
+.icons {
+	margin-top: 1rem;	
+}
+
+.icons a {
 	width: 2rem;
-	margin: 1rem 0.5rem;
+	margin: 1.25rem 0.5rem;
+	text-decoration: none;
 }
